@@ -14,16 +14,22 @@ func main() {
 }
 
 func CountWords(data []byte) int {
-	wordCount := 0
-
 	if len(data) == 0 {
 		return 0
 	}
+	wordDetected := false
+	wordCount := 0
 
 	for _, x := range data {
 		if x == ' ' {
 			wordCount++
+		} else {
+			wordDetected = true
 		}
+	}
+
+	if !wordDetected {
+		return 0
 	}
 
 	wordCount++
