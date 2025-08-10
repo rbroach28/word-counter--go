@@ -1,3 +1,3 @@
-module github.com/rbroach28/word-counter
+module github.com/rbroach28/wordcounter
 
 go 1.24.2
